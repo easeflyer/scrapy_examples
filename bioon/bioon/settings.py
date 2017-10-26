@@ -65,6 +65,8 @@ COOKIES_ENABLED = True
 FEED_URI = os.path.join(PROJECT_ROOT, 'a.txt')
 FEED_FORMAT = 'jsonlines'
 
+print("FEED_URI{}".format(FEED_URI))
+
 LOG_ENCODING = None
 
 ##----------------------Mail settings------------------------
