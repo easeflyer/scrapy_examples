@@ -38,17 +38,16 @@ class BioonspiderSpider(scrapy.Spider):
         end_login = response.urljoin(login_url)
 
         # 生成post的数据
+        account = settings.USERNAME_BIOON,
         formdata = {
             # 请使用自己注册的用户名
-            'account': settings.ACCOUNT_BIOON,
+            'account': account,
+            'username': account,
+            'password': settings.PASSWORD_BIOON,
             'client_id': 'usercenter',
             'csrf_token': csrf_token,
-            'grant_type': 'grant_type',
+            'grant_type': 'password',
             'redirect_uri': 'http://login.bioon.com/userinfo',
-            # 请使用自己注册的用户名
-            'username': settings.USERNAME_BIOON,
-            # 请使用自己用户名的密码
-            'password': settings.PASSWORD_BIOON,
         }
 
         # 模拟登录请求
