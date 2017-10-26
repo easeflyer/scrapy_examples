@@ -100,7 +100,7 @@ def validateIp(proxy):
     for i in range(0, len(proxy)):
         ip = proxy[i]['ip']
         port = proxy[i]['port']
-        type = proxy[i]['type']
+        type = proxy[i]['type'].lower()
         proxy_ip_port = type + '://' + ip + ":" + port
         url_ = URLS[random.randint(0, len(URLS) - 1)]
         try:
