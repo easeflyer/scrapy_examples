@@ -1,0 +1,664 @@
+2015-09-28 19:56:42 [scrapy] INFO: Scrapy 1.0.3 started (bot: topgoods)
+2015-09-28 19:56:42 [scrapy] INFO: Optional features available: ssl, http11
+2015-09-28 19:56:42 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'topgoods.spiders', 'FEED_URI': 'aa.csv', 'SPIDER_MODULES': ['topgoods.spiders'], 'LOG_ENCODING': None, 'BOT_NAME': 'topgoods', 'FEED_FORMAT': 'csv', 'LOG_FILE': 'scrapy.log'}
+2015-09-28 19:56:43 [scrapy] INFO: Enabled extensions: CloseSpider, FeedExporter, TelnetConsole, LogStats, CoreStats, SpiderState
+2015-09-28 19:56:44 [py.warnings] WARNING: D:\Python27\lib\site-packages\scrapy\utils\deprecate.py:155: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2015-09-28 19:56:44 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-09-28 19:56:44 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-09-28 19:56:44 [scrapy] INFO: Enabled item pipelines: 
+2015-09-28 19:56:44 [scrapy] INFO: Spider opened
+2015-09-28 19:56:44 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-09-28 19:56:44 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-09-28 19:56:44 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> from <GET http://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10#J_Filter>
+2015-09-28 19:56:44 [scrapy] DEBUG: Redirecting (302) to <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10> from <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10>
+2015-09-28 19:56:45 [scrapy] DEBUG: Redirecting (302) to <GET https://pass.tmall.com/add?_tb_token_=qDiFZ7pf0cIw&cookie2=c34a91710ca0a979a63cd10244d7b64a&t=3283277afd48025ad4de67ae46c98bd8&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10&pacc=Pvjb-saItsCZekHq8HVG2w==&opi=123.124.21.194&tmsc=1443441473688383> from <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10>
+2015-09-28 19:56:45 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?tbpm=1&type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> from <GET https://pass.tmall.com/add?_tb_token_=qDiFZ7pf0cIw&cookie2=c34a91710ca0a979a63cd10244d7b64a&t=3283277afd48025ad4de67ae46c98bd8&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10&pacc=Pvjb-saItsCZekHq8HVG2w==&opi=123.124.21.194&tmsc=1443441473688383>
+2015-09-28 19:56:45 [scrapy] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> from <GET https://list.tmall.com/search_product.htm?tbpm=1&type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10>
+2015-09-28 19:56:46 [scrapy] DEBUG: Crawled (200) <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> (referer: None)
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520890902830&skuId=3104150533818&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1044264726&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520890902830&skuId=3104150533818&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1044264726&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520986584531&skuId=3106013641238&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2169952889&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520986584531&skuId=3106013641238&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2169952889&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=43192617475&skuId=79906275436&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1849087792&is_b=1> from <GET http://detail.tmall.com/item.htm?id=43192617475&skuId=79906275436&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1849087792&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=40138275834&skuId=74993501601&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=728443962&is_b=1> from <GET http://detail.tmall.com/item.htm?id=40138275834&skuId=74993501601&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=728443962&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521101385329&skuId=3105196292301&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1754318057&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521101385329&skuId=3105196292301&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1754318057&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=44075447076&skuId=84157963863&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=2251850078&is_b=1> from <GET http://detail.tmall.com/item.htm?id=44075447076&skuId=84157963863&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=2251850078&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521387277276&skuId=3106442515399&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1609814397&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521387277276&skuId=3106442515399&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1609814397&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521383251407&skuId=3106510758040&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=925945766&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521383251407&skuId=3106510758040&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=925945766&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521419767679&skuId=3106687643088&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1609814397&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521419767679&skuId=3106687643088&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1609814397&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520914876517&skuId=3104248630083&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2261319667&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520914876517&skuId=3104248630083&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2261319667&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520640798318&skuId=3103002351483&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1738166107&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520640798318&skuId=3103002351483&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1738166107&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=20137881710&skuId=49058468921&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1695037642&is_b=1> from <GET http://detail.tmall.com/item.htm?id=20137881710&skuId=49058468921&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1695037642&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=40582054313&skuId=3108021096815&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2005537184&is_b=1> from <GET http://detail.tmall.com/item.htm?id=40582054313&skuId=3108021096815&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2005537184&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521224258385&skuId=3105719141518&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2122186754&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521224258385&skuId=3105719141518&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2122186754&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520970903254&skuId=3104604360533&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=408107205&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520970903254&skuId=3104604360533&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=408107205&is_b=1>
+2015-09-28 19:56:46 [scrapy] DEBUG: Crawled (200) <GET https://mbox.re.taobao.com/gt?pid=419109_1006&qs1=sbid%253D2%2526frcatid%253D50025135%2526keyword%253D%2526pid%253D419109_1006%2526offset%253D45%2526propertyid%253D%2526gprice%253D0%2525252C100000000%2526loc%253D%2526sort%253D%2526feature_names%253DpromoPrice%25252CmultiImgs%25252Ctags%25252CdsrDeliver%25252CdsrDeliverGap%25252CdsrDescribe%25252CdsrDescribeGap%25252CdsrService%25252CdsrServiceGap&_ksTS=14434414065_1956&cb=json519> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=40138275834&skuId=74993501601&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=728443962&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://mbox.re.taobao.com/gt?pid=419109_1006&qs1=sbid%253D2%2526frcatid%253D50025135%2526keyword%253D%2526pid%253D419109_1006%2526offset%253D45%2526propertyid%253D%2526gprice%253D0%2525252C100000000%2526loc%253D%2526sort%253D%2526feature_names%253DpromoPrice%25252CmultiImgs%25252Ctags%25252CdsrDeliver%25252CdsrDeliverGap%25252CdsrDescribe%25252CdsrDescribeGap%25252CdsrService%25252CdsrServiceGap&_ksTS=14434414065_1956&cb=json519>
+{'GOODS_NAME': u'bread n butter\u9762\u5305\u9ec4\u6cb9\u8f7b\u5962\u54c1\u724c\u5973\u88c5\u5b98\u65b9\u5e97',
+ 'GOODS_PRICE': u'699.00',
+ 'GOODS_URL': u'https://click.simba.taobao.com/cc_im?p=&amp;amp;s=1532531026&amp;amp;k=345&amp;amp;e=X4%2FGUBZFfhB4ekpUiWG3VS3vbWIEH%2FT9DSRA%2Bo0TBE%2BMQdVj3RzBdu7q2xav1e87SMHq1dqj5zpinr6f7EMVZQRv2yQVqoPm19QjE%2BBzXOpVJS%2BZPd9E7aTK5HWJKjc20eBe3UOZGsLTDuDVPRokYFKQayRckTgXZ4yvkptjHspnamxZTA30%2BXrpETLf6BR%2FL5b%2FLDWSTQcMj%2F1cyUGyOM%2FhA7I1lyatPJkOKNIB9GSU100JSKDyNOgr34TpxmrWAhddR2bvU0X8C8%2F5vXJ8KMuL092pmLx6WlpzcmR9crrpQO56FdLg%2FyQye5NoTa92GSRUOvkWQpg7grhSHOYMbw%3D%3D'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://mbox.re.taobao.com/gt?pid=419109_1006&qs1=sbid%253D2%2526frcatid%253D50025135%2526keyword%253D%2526pid%253D419109_1006%2526offset%253D45%2526propertyid%253D%2526gprice%253D0%2525252C100000000%2526loc%253D%2526sort%253D%2526feature_names%253DpromoPrice%25252CmultiImgs%25252Ctags%25252CdsrDeliver%25252CdsrDeliverGap%25252CdsrDescribe%25252CdsrDescribeGap%25252CdsrService%25252CdsrServiceGap&_ksTS=14434414065_1956&cb=json519>
+{'GOODS_NAME': u'\u4e39\u61552015\u79cb\u88c5\u65b0\u6b3e\u5927\u724c\u5370\u82b1\u5706\u9886\u4e03\u5206\u8896\u8fde\u8863\u88d9',
+ 'GOODS_PRICE': u'372.00',
+ 'GOODS_URL': u'https://click.simba.taobao.com/cc_im?p=&amp;amp;s=1532531026&amp;amp;k=345&amp;amp;e=TksBvayoLYp4ekpUiWG3VS3vbWIEH%2FT9DSRA%2Bo0TBE%2BMQdVj3RzBdu7q2xav1e87SMHq1dqj5zq9UXY8k5w1GSZlgsKOOKoB%2Fw%2BhbDtHDrBVJS%2BZPd9E7aTK5HWJKjc20eBe3UOZGsLTDuDVPRokYFKQayRckTgXZ4yvkptjHspnamxZTA30%2BXrpETLf6BR%2FL5b%2FLDWSTQe4WRR6k0bYE6%2BmQfypurYC9jYx5A%2B29j6HLXBknL7nZJYGDUrNYD6a5gjdGsi3c%2FjnKA4qzMYX7Ys%2F5kdxI%2FcI1CgaQDB%2BnSMuI5FdmXr9jxpBMSPQdIh8jUnDE55oCAadEvVuN%2FzsUA%3D%3D'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://mbox.re.taobao.com/gt?pid=419109_1006&qs1=sbid%253D2%2526frcatid%253D50025135%2526keyword%253D%2526pid%253D419109_1006%2526offset%253D45%2526propertyid%253D%2526gprice%253D0%2525252C100000000%2526loc%253D%2526sort%253D%2526feature_names%253DpromoPrice%25252CmultiImgs%25252Ctags%25252CdsrDeliver%25252CdsrDeliverGap%25252CdsrDescribe%25252CdsrDescribeGap%25252CdsrService%25252CdsrServiceGap&_ksTS=14434414065_1956&cb=json519>
+{'GOODS_NAME': u'2015\u79cb\u65b0\u6b3e\u63d0\u82b1\u957f\u8896\u7cfb\u5e26\u4fee\u8eab\u5370\u82b1\u5927\u6446\u8fde\u8863\u88d9',
+ 'GOODS_PRICE': u'497.00',
+ 'GOODS_URL': u'https://click.simba.taobao.com/cc_im?p=&amp;amp;s=1532531026&amp;amp;k=345&amp;amp;e=Tx173HMN6lx4ekpUiWG3VS3vbWIEH%2FT9DSRA%2Bo0TBE%2BMQdVj3RzBdu7q2xav1e87SMHq1dqj5zq9UXY8k5w1GXJJ4r0K23LD5UFQgVQZT29VJS%2BZPd9E7aTK5HWJKjc20eBe3UOZGsLTDuDVPRokYFKQayRckTgXZ4yvkptjHspnamxZTA30%2BXrpETLf6BR%2FL5b%2FLDWSTQe4WRR6k0bYExbLv2YLUT1ug0dKh6gFDPOnDRE3tEje31imhyO4DFK1zX742frbVz6u433OLtc40SIRiqFO0zU%2B1CgaQDB%2BnSMuI5FdmXr9jxpBMSPQdIh8AR0VURamHAypt0PaCUMRjw%3D%3D'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://mbox.re.taobao.com/gt?pid=419109_1006&qs1=sbid%253D2%2526frcatid%253D50025135%2526keyword%253D%2526pid%253D419109_1006%2526offset%253D45%2526propertyid%253D%2526gprice%253D0%2525252C100000000%2526loc%253D%2526sort%253D%2526feature_names%253DpromoPrice%25252CmultiImgs%25252Ctags%25252CdsrDeliver%25252CdsrDeliverGap%25252CdsrDescribe%25252CdsrDescribeGap%25252CdsrService%25252CdsrServiceGap&_ksTS=14434414065_1956&cb=json519>
+{'GOODS_NAME': u'\u6b27\u7f8e\u9ad8\u7aef\u5927\u724c2015\u79cb\u88c5\u4e2d\u957f\u6b3e\u4fee\u8eab\u7ea2\u8272\u8fde\u8863\u88d9',
+ 'GOODS_PRICE': u'799.00',
+ 'GOODS_URL': u'https://click.simba.taobao.com/cc_im?p=&amp;amp;s=1532531026&amp;amp;k=345&amp;amp;e=874u4Z%2BLsQV4ekpUiWG3VS3vbWIEH%2FT9DSRA%2Bo0TBE%2BMQdVj3RzBdu7q2xav1e87SMHq1dqj5zodG%2FE%2Bc6WzrcpiaclLiw7flM2Jr2KKvBhVJS%2BZPd9E7aTK5HWJKjc20eBe3UOZGsLTDuDVPRokYFKQayRckTgXZ4yvkptjHspnamxZTA30%2BXrpETLf6BR%2FL5b%2FLDWSTQe4WRR6k0bYE49qxKt1x%2FXhQxqf4uLHI2Nst5idDrrgypa2z2N0TBV7vm7E6rd2y0mjcet8ijNdblNnRiPsieAFWlpzcmR9crrpQO56FdLg%2FyQye5NoTa92AlsWYjKcFfN43f1SG6gv8A%3D%3D'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://mbox.re.taobao.com/gt?pid=419109_1006&qs1=sbid%253D2%2526frcatid%253D50025135%2526keyword%253D%2526pid%253D419109_1006%2526offset%253D45%2526propertyid%253D%2526gprice%253D0%2525252C100000000%2526loc%253D%2526sort%253D%2526feature_names%253DpromoPrice%25252CmultiImgs%25252Ctags%25252CdsrDeliver%25252CdsrDeliverGap%25252CdsrDescribe%25252CdsrDescribeGap%25252CdsrService%25252CdsrServiceGap&_ksTS=14434414065_1956&cb=json519>
+{'GOODS_NAME': u'bread n butter\u9762\u5305\u9ec4\u6cb9\u8f7b\u5962\u54c1\u724c\u5973\u88c5\u5b98\u65b9\u5e97',
+ 'GOODS_PRICE': u'499.00',
+ 'GOODS_URL': u'https://click.simba.taobao.com/cc_im?p=&amp;amp;s=1532531026&amp;amp;k=345&amp;amp;e=Ka0eFYQMIIZ4ekpUiWG3VS3vbWIEH%2FT9DSRA%2Bo0TBE%2BMQdVj3RzBdu7q2xav1e87SMHq1dqj5zpinr6f7EMVZQRv2yQVqoPmFPYYB%2FZble1VJS%2BZPd9E7aTK5HWJKjc20eBe3UOZGsLTDuDVPRokYFKQayRckTgXZ4yvkptjHspnamxZTA30%2BXrpETLf6BR%2FL5b%2FLDWSTQd9C%2B6ugWzZynH%2FEconfg%2FkWSGmGcjRgt%2FkIDtTvI0J5ykM79AQeDu7AwEqWRaC2tiqRaucTaZ%2Ft4UZsH56G0pZ8ls8AqnV8CBbgA6TqrVacq6%2BPLT08blxQELr%2FNzJLR2H7HdIyRUyGA%3D%3D'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=43192617475&skuId=79906275436&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1849087792&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520890902830&skuId=3104150533818&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1044264726&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=40138275834&skuId=74993501601&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=728443962&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u5dde\u54e5\u5f1f\u771f\u7684\u597d\u8d38\u6613\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u54e5\u5f1f\u5973\u88c5\u590f\u79cb\u65b0\u6b3e\u957f\u8896\u9488\u7ec7\u7f8a\u6bdb\u886b\u7eaf\u8272\u5706\u9886\u7f8a\u6bdb\u8863\u8584\u5f00\u886b\u5916\u5957790003',
+ 'GOODS_PRICE': u'200.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=40138275834&skuId=74993501601&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=728443962&is_b=1',
+ 'SHOP_NAME': u'\u54e5\u5f1f\u5b98\u65b9\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UMGI4MmQGOFxy.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=43192617475&skuId=79906275436&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1849087792&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u5e7f\u5dde\u5e02',
+ 'COMPANY_NAME': u'\u5e7f\u5dde\u5e02\u4fcf\u5609\u5983\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u857e\u4e1d\u6253\u5e95\u886b2015\u79cb\u5b63\u65b0\u54c1\u97e9\u7248\u5973\u88c5\u4e0a\u8863\u4fee\u8eab\u663e\u7626\u7acb\u9886\u957f\u8896\u857e\u4e1d\u886b\u5973\u6f6e',
+ 'GOODS_PRICE': u'59.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=43192617475&skuId=79906275436&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1849087792&is_b=1',
+ 'SHOP_NAME': u'\u4fcf\u4f73\u5983\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFg0OFN4MGcSvgTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=20137881710&skuId=49058468921&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1695037642&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520890902830&skuId=3104150533818&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1044264726&is_b=1>
+{'COMPANY_ADDRESS': u'\u6df1\u5733\u9edb\u5965\u65f6\u5c1a\u65f6\u88c5\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'ZK\u65d7\u8230\u5e97\u5973\u88c52015\u65e9\u79cb\u88c5\u65b0\u6b3e\u9ed1\u8272\u534a\u8eab\u88d9\u77ed\u88d9\u5b50\u663e\u7626\u4fee\u8eab\u79cb\u5b63A\u5b57\u88d9',
+ 'GOODS_PRICE': u'179.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520890902830&skuId=3104150533818&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1044264726&is_b=1',
+ 'SHOP_NAME': u'zk\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFN0MmILMmcyMgTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520640798318&skuId=3103002351483&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1738166107&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521101385329&skuId=3105196292301&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1754318057&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=44075447076&skuId=84157963863&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=2251850078&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520914876517&skuId=3104248630083&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2261319667&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=20137881710&skuId=49058468921&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1695037642&is_b=1>
+{'COMPANY_ADDRESS': u'\u6df1\u5733\u5e02\u51ef\u745e\u65af\u7535\u5b50\u5546\u52a1\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u5723\u591a\u540d\u59ae2014\u6625\u88c5\u65b0\u6b3e\u5973\u88c5\u4e2d\u957f\u6b3e\u98ce\u8863\u97e9\u7248\u4fee\u8eab\u6625\u79cb\u5916\u5957\u5973\u5f0f\u98ce\u8863\u957f',
+ 'GOODS_PRICE': u'69.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=20137881710&skuId=49058468921&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1695037642&is_b=1',
+ 'SHOP_NAME': u'\u5723\u591a\u540d\u59ae\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFxSMFNGMGx0vgTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521387277276&skuId=3106442515399&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1609814397&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521245649388&skuId=3105836725036&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1787055399&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521245649388&skuId=3105836725036&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1787055399&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520640798318&skuId=3103002351483&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1738166107&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u5dde\u5a49\u7cfb\u5546\u8d38\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'2015\u97e9\u7248\u79cb\u88c5\u65b0\u6b3e\u9542\u7a7a\u857e\u4e1d\u886b\u957f\u8896T\u6064\u5973\u4e2d\u957f\u6b3e\u6253\u5e95\u886b\u5973\u6b3e\u4fee\u8eab\u4e0a\u8863',
+ 'GOODS_PRICE': u'49.98',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520640798318&skuId=3103002351483&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1738166107&is_b=1',
+ 'SHOP_NAME': u'\u9999\u4ed9\u5983\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFcGOmHLMCHWMWTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521101385329&skuId=3105196292301&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1754318057&is_b=1>
+{'COMPANY_ADDRESS': u'\u6d77\u5b81\u963f\u83b1\u6cd5\u5bb6\u8d38\u6613\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u3010\u6e05\u4ed3\u30112015\u79cb\u5b63\u65b0\u6b3e\u5973\u58eb\u5916\u5957\u957f\u8896\u6bdb\u8863\u4fee\u8eab\u79cb\u6b3e\u77ed\u6b3e\u9488\u7ec7\u886b\u5957\u5934\u6f6e',
+ 'GOODS_PRICE': u'68.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521101385329&skuId=3105196292301&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1754318057&is_b=1',
+ 'SHOP_NAME': u'\u963f\u83b1\u6cd5\u5bb6\u670d\u9970\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFcbMmvYOmNbMWTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520671171579&skuId=3103194892962&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1599601733&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520671171579&skuId=3103194892962&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1599601733&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=45595045203&skuId=91981243990&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2261286306&is_b=1> from <GET http://detail.tmall.com/item.htm?id=45595045203&skuId=91981243990&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2261286306&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=44075447076&skuId=84157963863&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=2251850078&is_b=1>
+{'COMPANY_ADDRESS': u'\u4e0a\u6d77,  \u4e0a\u6d77\u5e02',
+ 'COMPANY_NAME': u'\u4e0a\u6d77\u9526\u8482\u7535\u5b50\u5546\u52a1\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'2015\u79cb\u5b63\u65b0\u54c1\u97e9\u7248\u5973\u88c5\u540d\u5a9b\u5c0f\u9999\u98ce\u77ed\u6b3e\u5916\u5957\u4fee\u8eab\u5973\u58eb\u6bdb\u5462\u77ed\u5916\u5957\u4e0a\u8863',
+ 'GOODS_PRICE': u'118.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=44075447076&skuId=84157963863&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=2251850078&is_b=1',
+ 'SHOP_NAME': u'\u6e05\u96c5\u82e5\u5170\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCIbvFgbvmNuONTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521419767679&skuId=3106687643088&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1609814397&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520914876517&skuId=3104248630083&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2261319667&is_b=1>
+{'COMPANY_ADDRESS': u'\u798f\u5efa\u7701,  \u53a6\u95e8\u5e02',
+ 'COMPANY_NAME': u'\u53a6\u95e8\u838e\u7687\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'2015\u65b0\u6b3e\u79cb\u5b63\u677e\u7d27\u8170\u725b\u4ed4\u88e4\u5973\u957f\u88e4\u5c0f\u811a\u88e4\u97e9\u7248\u5f39\u529b\u4fee\u8eab\u663e\u7626\u94c5\u7b14\u88e4\u5b50',
+ 'GOODS_PRICE': u'49.50',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520914876517&skuId=3104248630083&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2261319667&is_b=1',
+ 'SHOP_NAME': u'\u51ef\u4ed5\u987f\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCILvFvYOFxLMWTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521387277276&skuId=3106442515399&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1609814397&is_b=1>
+{'COMPANY_ADDRESS': u'\u676d\u5dde\u79cb\u5c1a\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u79cb\u5b63\u5973\u88c52015\u65b0\u6b3e\u79cb\u88c5\u97e9\u7248\u4e0a\u8863\u663e\u7626\u9488\u7ec7\u886b\u649e\u8272\u9488\u7ec7\u5f00\u886b\u6bdb\u8863\u5916\u5957\u5973',
+ 'GOODS_PRICE': u'108.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521387277276&skuId=3106442515399&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1609814397&is_b=1',
+ 'SHOP_NAME': u'\u79cb\u4f26\u4f9d\u5c1a\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFxWOFgYMmvSMWTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521224258385&skuId=3105719141518&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2122186754&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=40963540187&skuId=3107805795178&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1852247058&is_b=1> from <GET http://detail.tmall.com/item.htm?id=40963540187&skuId=3107805795178&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1852247058&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521370041434&skuId=3106449700323&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1766047907&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521370041434&skuId=3106449700323&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1766047907&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=40572456264&skuId=65153207017&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2033307723&is_b=1> from <GET http://detail.tmall.com/item.htm?id=40572456264&skuId=65153207017&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2033307723&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=40119237325&skuId=3109072695220&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=874022290&is_b=1> from <GET http://detail.tmall.com/item.htm?id=40119237325&skuId=3109072695220&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=874022290&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520184988165&skuId=3100883383644&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1020792630&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520184988165&skuId=3100883383644&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1020792630&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=37635418343&skuId=3105953412830&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=857949626&is_b=1> from <GET http://detail.tmall.com/item.htm?id=37635418343&skuId=3105953412830&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=857949626&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521419767679&skuId=3106687643088&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1609814397&is_b=1>
+{'COMPANY_ADDRESS': u'\u676d\u5dde\u79cb\u5c1a\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u79cb\u4f26\u4f9d\u5c1a2015\u65b0\u6b3e\u79cb\u88c5\u97e9\u7248\u6c14\u8d28\u663e\u7626\u9488\u7ec7\u886b\u649e\u8272\u9488\u7ec7\u5f00\u886b\u5916\u5957\u5973',
+ 'GOODS_PRICE': u'108.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521419767679&skuId=3106687643088&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1609814397&is_b=1',
+ 'SHOP_NAME': u'\u79cb\u4f26\u4f9d\u5c1a\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFxWOFgYMmvSMWTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=43317054959&skuId=3108581686535&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2266950171&is_b=1> from <GET http://detail.tmall.com/item.htm?id=43317054959&skuId=3108581686535&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2266950171&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521224258385&skuId=3105719141518&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2122186754&is_b=1>
+{'COMPANY_ADDRESS': u'\u6c5f\u82cf\u7701,  \u82cf\u5dde\u5e02',
+ 'COMPANY_NAME': u'\u82cf\u5dde\u60c5\u871c\u5a1c\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'2015\u5973\u88c5\u79cb\u51ac\u5b63\u65b0\u6b3e\u97e9\u7248\u52a0\u539a\u957f\u8896\u857e\u4e1d\u82b1\u8fb9\u9886\u9488\u7ec7\u6253\u5e95\u886b\u5973\u6bdb\u8863\u5957\u5934',
+ 'GOODS_PRICE': u'59.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521224258385&skuId=3105719141518&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2122186754&is_b=1',
+ 'SHOP_NAME': u'\u60c5\u871c\u5a1c\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCHyvCH4MCcbMNTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=45311637398&skuId=4611686063739025302&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=755700978&is_b=1> from <GET http://detail.tmall.com/item.htm?id=45311637398&skuId=4611686063739025302&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=755700978&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=36975956386&skuId=42784713847&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1654489398&is_b=1> from <GET http://detail.tmall.com/item.htm?id=36975956386&skuId=42784713847&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1654489398&is_b=1>
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=40582054313&skuId=3108021096815&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2005537184&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521383251407&skuId=3106510758040&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=925945766&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521245649388&skuId=3105836725036&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1787055399&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=45595045203&skuId=91981243990&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2261286306&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=40582054313&skuId=3108021096815&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2005537184&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u4e1c\u839e\u5e02',
+ 'COMPANY_NAME': u'\u4e1c\u839e\u5e02\u4e8c\u5408\u4e00\u7535\u5b50\u5546\u52a1\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u8ff9\u5f02\u5973\u58eb\u5c0f\u811a\u4e2d\u8170\u957f\u88e4\u5916\u7a7f\u6253\u5e95\u88e4\u5973\u79cb\u88c52015\u65b0\u6b3e\u5927\u7801\u663e\u7626\u7d27\u8eab\u88e4',
+ 'GOODS_PRICE': u'69.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=40582054313&skuId=3108021096815&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2005537184&is_b=1',
+ 'SHOP_NAME': u'jiyi\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCNWMF8GMGH4MNTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521383251407&skuId=3106510758040&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=925945766&is_b=1>
+{'COMPANY_ADDRESS': u'\u4e0a\u6d77\u739b\u601d\u72c4\u62c9\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u739b\u601d\u72c4\u62c92015\u97e9\u7248\u5bbd\u677e\u5927\u7801\u5973\u88c5\u5f00\u886b\u79cb\u51ac\u65b0\u6b3e\u9488\u7ec7\u886b\u4e2d\u957f\u6b3e\u6bdb\u8863\u5916\u5957',
+ 'GOODS_PRICE': u'138.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521383251407&skuId=3106510758040&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=925945766&is_b=1',
+ 'SHOP_NAME': u'\u739b\u601d\u72c4\u62c9\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UOFIbOFQbMGxL.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520986584531&skuId=3106013641238&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2169952889&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521245649388&skuId=3105836725036&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1787055399&is_b=1>
+{'COMPANY_ADDRESS': u'\u676d\u5dde\u6885\u8d5b\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u6885\u8d5b\u51702015\u65b0\u6b3e\u79cb\u5b63\u77ed\u88e4\u5973\u9774\u88e4\u4fee\u8eab\u663e\u7626\u5973\u88e4\u4f11\u95f2\u88e4\u76f4\u7b52\u767e\u642d\u88e4\u5b50\u6f6e',
+ 'GOODS_PRICE': u'69.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521245649388&skuId=3105836725036&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1787055399&is_b=1',
+ 'SHOP_NAME': u'\u6885\u8d5b\u5170\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFc4MGNbMFvSOQTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=45595045203&skuId=91981243990&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2261286306&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u5e7f\u5dde\u5e02',
+ 'COMPANY_NAME': u'\u5e7f\u5dde\u5b9a\u94bb\u5546\u8d38\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u97e9\u7248\u4e5d\u5206\u88e4\u5973\u79cb\u5c0f\u811a\u88e4\u5973\u590f\u663e\u7626\u4fee\u8eab\u6253\u5e95\u88e4\u5973\u79cb\u5916\u7a7f\u94c5\u7b14\u88e4\u4f11\u95f2\u88e4\u5973',
+ 'GOODS_PRICE': u'49.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=45595045203&skuId=91981243990&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2261286306&is_b=1',
+ 'SHOP_NAME': u'\u6b27\u60c5\u8bd7\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCILvFI4MCvWMgTT.htm'}
+2015-09-28 19:56:47 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520671171579&skuId=3103194892962&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1599601733&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:47 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520986584531&skuId=3106013641238&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2169952889&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u4e1c\u839e\u5e02',
+ 'COMPANY_NAME': u'\u4e1c\u839e\u5e02\u540d\u60c5\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'2015\u79cb\u65b0\u6b3e\u4f11\u95f2\u663e\u7626\u4eff\u68c9\u9ebb\u54c8\u4f26\u88e4\u5bbd\u677e\u677e\u7d27\u8170\u5973\u88c5\u4e5d\u5206\u88e4\u65f6\u5c1a\u5c0f\u811a\u88e4',
+ 'GOODS_PRICE': u'69.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520986584531&skuId=3106013641238&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2169952889&is_b=1',
+ 'SHOP_NAME': u'\u540d\u60c5\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCHLOFkbvCg4OQTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=40119237325&skuId=3109072695220&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=874022290&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520970903254&skuId=3104604360533&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=408107205&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521370041434&skuId=3106449700323&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1766047907&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=40572456264&skuId=65153207017&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2033307723&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520184988165&skuId=3100883383644&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1020792630&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=19591334488&skuId=3108170537322&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=642079562&is_b=1> from <GET http://detail.tmall.com/item.htm?id=19591334488&skuId=3108170537322&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=642079562&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=40491636196&skuId=96733120653&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2094653764&is_b=1> from <GET http://detail.tmall.com/item.htm?id=40491636196&skuId=96733120653&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2094653764&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520671171579&skuId=3103194892962&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1599601733&is_b=1>
+{'COMPANY_ADDRESS': u'\u4e5d\u6c5f\u660e\u8473\u5546\u8d38\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u5988\u5988\u88c5\u771f\u4e24\u4ef6\u5957\u88c5\u4e2d\u8001\u5e74\u5973\u88c5\u6625\u79cb\u88c5\u6bdb\u8863\u5916\u5957\u957f\u8896\u9488\u7ec7\u5f00\u886b\u5a5a\u793c\u4e0a\u8863',
+ 'GOODS_PRICE': u'158.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520671171579&skuId=3103194892962&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1599601733&is_b=1',
+ 'SHOP_NAME': u'\u5e15\u7c73\u62c9\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvF8SOFxWvFcGvWTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=40119237325&skuId=3109072695220&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=874022290&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u5dde\u5e02\u97e9\u7f07\u670d\u88c5\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u96ea\u7eba\u886b\u59732015\u79cb\u88c5\u65b0\u6b3e\u5927\u7801\u5973\u88c5\u4e0a\u8863\u79cb\u5b63\u65b0\u54c1\u97e9\u7248\u6f6e\u857e\u4e1d\u6253\u5e95\u886b\u957f\u8896',
+ 'GOODS_PRICE': u'99.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=40119237325&skuId=3109072695220&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=874022290&is_b=1',
+ 'SHOP_NAME': u'\u9999\u83f2\u4e3d\u838e\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UOmc0vmIyvCkW.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=40884789329&skuId=3109534768553&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1807071973&is_b=1> from <GET http://detail.tmall.com/item.htm?id=40884789329&skuId=3109534768553&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1807071973&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520970903254&skuId=3104604360533&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=408107205&is_b=1>
+{'COMPANY_ADDRESS': u'\u90d1\u5dde\u4e91\u9876\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u9038\u9633\u5973\u88e42015\u65b0\u6b3e\u79cb\u5b63\u4f11\u95f2\u88e4\u5973\u957f\u88e4\u5927\u7801\u901a\u52e4OL\u897f\u88e4\u5c0f\u811a\u94c5\u7b14\u88e41701',
+ 'GOODS_PRICE': u'148.99',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520970903254&skuId=3104604360533&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=408107205&is_b=1',
+ 'SHOP_NAME': u'\u9038\u9633\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UMmN4vFNuvCNb.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521081014213&skuId=3105065941509&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1807576374&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521081014213&skuId=3105065941509&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1807576374&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520920656622&skuId=3104274234067&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1120575748&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520920656622&skuId=3104274234067&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1120575748&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=45311637398&skuId=4611686063739025302&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=755700978&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521370041434&skuId=3106449700323&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1766047907&is_b=1>
+{'COMPANY_ADDRESS': u'\u5609\u5174\u97e9\u5f69\u59ae\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u79cb\u5b63\u5973\u88c5\u5916\u5957\u521d\u79cb\u5b66\u751f\u97e9\u7248\u6d41\u82cf\u5bbd\u677e\u8759\u8760\u886b\u6bdb\u8863\u79cb\u88c52015\u65b0\u6b3e\u5957\u5934\u6f6e',
+ 'GOODS_PRICE': u'69.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521370041434&skuId=3106449700323&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1766047907&is_b=1',
+ 'SHOP_NAME': u'\u621a\u7c73\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFcLMCN0MGkWMWTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=40572456264&skuId=65153207017&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2033307723&is_b=1>
+{'COMPANY_ADDRESS': u'\u6c5f\u82cf\u7701,  \u82cf\u5dde\u5e02',
+ 'COMPANY_NAME': u'\u82cf\u5dde\u5b87\u672c\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'2015\u79cb\u88c5\u65b0\u6b3e\u9488\u7ec7\u886b\u5973\u5916\u5957 \u97e9\u7248\u5bbd\u677e\u8759\u8760\u8896\u62ab\u80a9\u6bdb\u8863\u5f00\u886b \u5927\u7801\u5973\u88c5',
+ 'GOODS_PRICE': u'58.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=40572456264&skuId=65153207017&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2033307723&is_b=1',
+ 'SHOP_NAME': u'\u6893\u5948\u5c14\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCNGvGvWMGcyvWTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520902995993&skuId=4611686539330383897&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1966697100&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520902995993&skuId=4611686539330383897&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1966697100&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=40963540187&skuId=3107805795178&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1852247058&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=37635418343&skuId=3105953412830&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=857949626&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520184988165&skuId=3100883383644&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1020792630&is_b=1>
+{'COMPANY_ADDRESS': u'',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u97e9\u72482015\u590f\u88c5\u77ed\u88d9\u65b0\u6b3e\u5973\u88c5\u5305\u81c0\u5927\u7801\u663e\u7626\u4fee\u8eab\u9ad8\u8170 \u725b\u4ed4\u88d9 \u590f \u534a\u8eab',
+ 'GOODS_PRICE': u'59.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520184988165&skuId=3100883383644&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1020792630&is_b=1',
+ 'SHOP_NAME': u'27\u65e5\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFNyvmcSvCxGvNTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521178267288&skuId=3105517011560&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1132342502&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521178267288&skuId=3105517011560&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1132342502&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520561821029&skuId=3104479885292&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=734598299&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520561821029&skuId=3104479885292&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=734598299&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=45061049791&skuId=84556742618&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2090294641&is_b=1> from <GET http://detail.tmall.com/item.htm?id=45061049791&skuId=84556742618&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2090294641&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=43306877805&skuId=79409490730&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=874022290&is_b=1> from <GET http://detail.tmall.com/item.htm?id=43306877805&skuId=79409490730&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=874022290&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520979801386&skuId=3104598853041&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2048311921&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520979801386&skuId=3104598853041&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2048311921&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=36975956386&skuId=42784713847&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1654489398&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=45311637398&skuId=4611686063739025302&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=755700978&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u5dde\u4ed5\u65cf\u8d38\u6613\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u79cb\u88c5\u5706\u9886\u957f\u8896\u886c\u886b\u5973\u58eb\u5546\u52a1\u4fee\u8eabOL\u901a\u52e4\u5de5\u4f5c\u670d\u804c\u4e1a\u886c\u8863\u5973\u5927\u7801\u68c9\u6b63\u88c5',
+ 'GOODS_PRICE': u'79.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=45311637398&skuId=4611686063739025302&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=755700978&is_b=1',
+ 'SHOP_NAME': u'\u5de5\u5e1d\u96c5\u670d\u9970\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UMG8bMGNWOFc4.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=40963540187&skuId=3107805795178&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1852247058&is_b=1>
+{'COMPANY_ADDRESS': u',  \u6df1\u5733\u5e02',
+ 'COMPANY_NAME': u'\u6df1\u5733\u5e02\u8863\u9177\u738b\u5b50\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u68d2\u7403\u670dbq\u59732015\u79cb\u5b63\u65b0\u6b3e\u60c5\u4fa3\u88c5\u5b66\u751f\u97e9\u7248\u6f6e\u957f\u8896\u60c5\u4fa3\u536b\u8863\u68d2\u7403\u886b\u5916\u5957',
+ 'GOODS_PRICE': u'89.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=40963540187&skuId=3107805795178&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1852247058&is_b=1',
+ 'SHOP_NAME': u'\u8863\u9177\u738b\u5b50\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFgbvCI0MGNbONTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=37635418343&skuId=3105953412830&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=857949626&is_b=1>
+{'COMPANY_ADDRESS': u'\u676d\u5dde\u96ea\u610f\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'AnnStreet2015\u6625\u79cb\u5973\u88c5\u5f39\u529b\u68c9\u6253\u5e95A\u5b57\u88d9\u4fee\u8eab\u4e03\u5206\u8896v\u9886\u9488\u7ec7\u8fde\u8863\u88d9',
+ 'GOODS_PRICE': u'99.90',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=37635418343&skuId=3105953412830&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=857949626&is_b=1',
+ 'SHOP_NAME': u'annstreet\u5973\u88c5\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UOm8uOFQSMCIL.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520070199042&skuId=3100324953112&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1856824663&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520070199042&skuId=3100324953112&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1856824663&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=36975956386&skuId=42784713847&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1654489398&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e38\u719f\u5e02\u767e\u7231\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u5b89\u8d1d\u5a012015\u65b0\u6b3e\u79cb\u5b63\u8584\u6b3e\u5047\u900f\u8089\u6253\u5e95\u88e4\u9ad8\u8170\u8e29\u811a\u9632\u52fe\u4e1d\u5927\u7801\u663e\u7626\u5973\u88e4',
+ 'GOODS_PRICE': u'59.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=36975956386&skuId=42784713847&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1654489398&is_b=1',
+ 'SHOP_NAME': u'\u5b89\u8d1d\u5a01\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFxbMmQ4OFvSONTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521037141907&skuId=3104847278404&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=913099165&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521037141907&skuId=3104847278404&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=913099165&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520597694276&skuId=3105092216809&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1862662631&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520597694276&skuId=3105092216809&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1862662631&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=43317054959&skuId=3108581686535&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2266950171&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521081014213&skuId=3105065941509&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1807576374&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=40491636196&skuId=96733120653&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2094653764&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=43317054959&skuId=3108581686535&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2266950171&is_b=1>
+{'COMPANY_ADDRESS': u'\u6c5f\u82cf\u7701,  \u82cf\u5dde\u5e02',
+ 'COMPANY_NAME': u'\u82cf\u5dde\u5e02\u5434\u6c5f\u8863\u70ab\u5230\u5e95\u9488\u7ec7\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'2015\u79cb\u51ac\u65b0\u6b3e\u5973\u88c5 \u97e9\u7248\u5706\u9886\u5957\u5934\u9488\u7ec7\u886b\u6253\u5e95\u886b\u62fc\u8272\u5bbd\u677e\u6bdb\u8863\u5973\u6f6e',
+ 'GOODS_PRICE': u'99.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=43317054959&skuId=3108581686535&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2266950171&is_b=1',
+ 'SHOP_NAME': u'\u853b\u56fe\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCILMCkbvmHuvQTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521081014213&skuId=3105065941509&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1807576374&is_b=1>
+{'COMPANY_ADDRESS': u'\u4e0a\u6d77\u9ece\u6d2a\u5b9e\u4e1a\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'2015\u65b0\u6b3e\u79cb\u88c5\u77ed\u88e4\u5973\u5916\u7a7f\u5f39\u529b\u4f11\u95f2\u5973\u88e4\u5927\u7801\u663e\u7626\u79cb\u51ac\u5973\u58eb\u68c9\u897f\u88c5\u77ed\u88e4',
+ 'GOODS_PRICE': u'69.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521081014213&skuId=3105065941509&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1807576374&is_b=1',
+ 'SHOP_NAME': u'\u5e03\u4f9d\u5e74\u534e\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFgWMG8uMCvuMNTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=40491636196&skuId=96733120653&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2094653764&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u5e7f\u5dde\u5e02',
+ 'COMPANY_NAME': u'\u5e7f\u5dde\u5e02\u6e2f\u9e4f\u670d\u88c5\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u9ad8\u8170\u725b\u4ed4\u88e4\u5973\u957f\u88e4\u79cb\u5c0f\u811a\u88e4\u94c5\u7b14\u88e4\u97e9\u7248\u663e\u7626\u5f39\u529b\u6f6e\u5927\u7801\u80d6mm\u52a0\u957f\u4fee\u8eab',
+ 'GOODS_PRICE': u'79.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=40491636196&skuId=96733120653&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2094653764&is_b=1',
+ 'SHOP_NAME': u'\u6e2f\u9e4f\u670d\u9970\u4e13\u8425\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCNSMmxbvGcLMNTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=45061049791&skuId=84556742618&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2090294641&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520979801386&skuId=3104598853041&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2048311921&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520902995993&skuId=4611686539330383897&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1966697100&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=40884789329&skuId=3109534768553&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1807071973&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521178267288&skuId=3105517011560&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1132342502&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=40253408068&skuId=98043632648&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2086017057&is_b=1> from <GET http://detail.tmall.com/item.htm?id=40253408068&skuId=98043632648&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2086017057&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=38089988675&skuId=61457328552&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=737182747&is_b=1> from <GET http://detail.tmall.com/item.htm?id=38089988675&skuId=61457328552&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=737182747&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=45061049791&skuId=84556742618&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2090294641&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u5e7f\u5dde\u5e02',
+ 'COMPANY_NAME': u'\u5e7f\u5dde\u5cf0\u6b27\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'2015\u590f\u79cb\u65b0\u6b3e\u4f11\u95f2\u590d\u53e4\u6587\u827a\u8303\u4fee\u8eab\u663e\u7626\u80cc\u5e26\u88e4 \u767e\u642d\u97e9\u7248\u957f\u88e4\u5b50\u5973\u6f6e',
+ 'GOODS_PRICE': u'49.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=45061049791&skuId=84556742618&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2090294641&is_b=1',
+ 'SHOP_NAME': u'\u6df1\u4e00\u6e21\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCNSvmISMmx0vQTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520561821029&skuId=3104479885292&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=734598299&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520979801386&skuId=3104598853041&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2048311921&is_b=1>
+{'COMPANY_ADDRESS': u'\u6e56\u5357\u7701,  \u682a\u6d32\u5e02',
+ 'COMPANY_NAME': u'\u682a\u6d32\u5e02\u8863\u8def\u79d1\u6280\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u957f\u8896t\u6064\u5973\u6b3e\u5bbd\u677e\u5927\u7801\u65f6\u5c1a\u4e2d\u957f\u6b3e\u79cb\u5b63\u6253\u5e95\u886b2015\u79cb\u88c5\u65b0\u6b3e\u5973\u58eb\u4e0a\u8863',
+ 'GOODS_PRICE': u'59.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520979801386&skuId=3104598853041&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2048311921&is_b=1',
+ 'SHOP_NAME': u'\u83f2\u6708\u5a05\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCN0OmvYvFkyvQTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=41521872446&skuId=71493731589&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=729863055&is_b=1> from <GET http://detail.tmall.com/item.htm?id=41521872446&skuId=71493731589&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=729863055&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520902995993&skuId=4611686539330383897&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1966697100&is_b=1>
+{'COMPANY_ADDRESS': u'\u6e56\u5317,  \u6b66\u6c49',
+ 'COMPANY_NAME': u'\u6b66\u6c49\u798f\u6ee1\u6ea2\u5546\u8d38\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u840c\u5c0f\u96c52015\u6625\u79cb\u65b0\u6b3e\u97e9\u7248\u4f11\u95f2\u5706\u9886\u8fd0\u52a8\u536b\u8863\u5973\u5957\u5934\u82f1\u6587\u5b57\u6bcd\u5370\u82b1\u5916\u5957',
+ 'GOODS_PRICE': u'79.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520902995993&skuId=4611686539330383897&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1966697100&is_b=1',
+ 'SHOP_NAME': u'\u840c\u5c0f\u96c5\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFkLMCxSMGHWvNTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=19591334488&skuId=3108170537322&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=642079562&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520920656622&skuId=3104274234067&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1120575748&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=40884789329&skuId=3109534768553&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1807071973&is_b=1>
+{'COMPANY_ADDRESS': u'\u6d4e\u5357\u6c38\u542f\u5546\u8d38\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u6c38\u542f\u6625\u79cb\u5b63\u5957\u5934\u536b\u8863\u5973\u88c5\u5916\u5957\u97e9\u7248\u6f6e\u5b66\u751f\u5bbd\u677e\u5973\u58eb\u5927\u7801\u957f\u8896\u8fd0\u52a8\u4e0a\u8863',
+ 'GOODS_PRICE': u'65.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=40884789329&skuId=3109534768553&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1807071973&is_b=1',
+ 'SHOP_NAME': u'\u6c38\u542f\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFgWMGNuvFkuvWTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521269299152&skuId=3105937623290&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1764612547&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521269299152&skuId=3105937623290&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1764612547&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=43306877805&skuId=79409490730&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=874022290&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521178267288&skuId=3105517011560&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1132342502&is_b=1>
+{'COMPANY_ADDRESS': u'\u90d1\u5dde\u5e02\u6d6a\u6f2b\u5c0f\u9547\u5546\u8d38\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u6b27\u59ff\u7eaf\u97e9\u7248\u5b66\u751f\u9ad8\u8170\u725b\u4ed4\u88e4\u5973\u957f\u88e4\u79cb\u94c5\u7b14\u88e4\u6392\u6263\u663e\u7626\u7d27\u8eab\u5c0f\u811a\u88e4\u6f6e',
+ 'GOODS_PRICE': u'59.90',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521178267288&skuId=3105517011560&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1132342502&is_b=1',
+ 'SHOP_NAME': u'\u6b27\u59ff\u7eaf\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFHGvCv0vC8WvgTT.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520070199042&skuId=3100324953112&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1856824663&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520675265126&skuId=3103157931024&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1946786895&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520675265126&skuId=3103157931024&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1946786895&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521056766821&skuId=3104899307183&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1925481788&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521056766821&skuId=3104899307183&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1925481788&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521119213104&skuId=3108117633376&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2215301223&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521119213104&skuId=3108117633376&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2215301223&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520561821029&skuId=3104479885292&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=734598299&is_b=1>
+{'COMPANY_ADDRESS': u'\u676d\u5dde\u514b\u4ee3\u5c14\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'MereMeet\u97e9\u72482015\u65b0\u6b3e\u79cb\u5b63\u5973\u88c5\u6bdb\u5462\u5916\u5957\u5973 \u4e2d\u957f\u6b3e\u6bdb\u5462\u5927\u8863\u4fee\u8eab\u6f6e',
+ 'GOODS_PRICE': u'98.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520561821029&skuId=3104479885292&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=734598299&is_b=1',
+ 'SHOP_NAME': u'meremeet\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UMGv0MFk4vCkS.htm'}
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=45581468273&skuId=86942713991&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2143710844&is_b=1> from <GET http://detail.tmall.com/item.htm?id=45581468273&skuId=86942713991&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2143710844&is_b=1>
+2015-09-28 19:56:48 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=43309801894&skuId=82535222397&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1703111046&is_b=1> from <GET http://detail.tmall.com/item.htm?id=43309801894&skuId=82535222397&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1703111046&is_b=1>
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521037141907&skuId=3104847278404&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=913099165&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=19591334488&skuId=3108170537322&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=642079562&is_b=1>
+{'COMPANY_ADDRESS': u'\u6e05\u6cb3\u53bf\u91d1\u4e1a\u7f8a\u7ed2\u5236\u54c1\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u7ed2\u90fd\u65b0\u79c02015\u79cb\u51ac\u65b0\u6b3e \u7f8a\u6bdb\u5f00\u886b\u5973 \u6bdb\u8863\u5973\u5706\u9886\u6bdb\u8863\u767e\u642d\u5973\u9488\u7ec7\u886b',
+ 'GOODS_PRICE': u'78.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=19591334488&skuId=3108170537322&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=642079562&is_b=1',
+ 'SHOP_NAME': u'\u7ed2\u90fd\u65b0\u79c0\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UMCQyvmcSMFxy.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520920656622&skuId=3104274234067&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1120575748&is_b=1>
+{'COMPANY_ADDRESS': u'\u4e1c\u839e\u5e02\u886b\u53f7\u5e97\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'2015\u79cb\u88c5\u65b0\u6b3e\u97e9\u7248\u5370\u82b1\u857e\u4e1d\u6253\u5e95\u886b\u5927\u7801\u5973\u58eb\u5c0f\u886b\u4e0a\u8863\u5bbd\u677e \u957f\u8896t\u6064\u5973',
+ 'GOODS_PRICE': u'59.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520920656622&skuId=3104274234067&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1120575748&is_b=1',
+ 'SHOP_NAME': u'yesvvt\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFHyvm8uMFc0ONTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=37767532565&skuId=96778640262&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2012681236&is_b=1> from <GET http://detail.tmall.com/item.htm?id=37767532565&skuId=96778640262&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2012681236&is_b=1>
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=43306877805&skuId=79409490730&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=874022290&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u5dde\u5e02\u97e9\u7f07\u670d\u88c5\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u96ea\u7eba\u886c\u886b\u59732015\u79cb\u88c5\u65b0\u6b3e\u5973\u88c5\u4e0a\u8863\u767d\u8272\u886c\u8863\u97e9\u7248\u79cb\u5b63\u4fee\u8eab\u957f\u8896\u6253\u5e95\u886b',
+ 'GOODS_PRICE': u'99.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=43306877805&skuId=79409490730&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=874022290&is_b=1',
+ 'SHOP_NAME': u'\u9999\u83f2\u4e3d\u838e\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UOmc0vmIyvCkW.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521112503640&skuId=3105238366051&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1852243062&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521112503640&skuId=3105238366051&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1852243062&is_b=1>
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520597694276&skuId=3105092216809&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1862662631&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521312426699&skuId=3106152020782&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=2266950171&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521312426699&skuId=3106152020782&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=2266950171&is_b=1>
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520070199042&skuId=3100324953112&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1856824663&is_b=1>
+{'COMPANY_ADDRESS': u'\u5317\u4eac,  \u5317\u4eac\u5e02',
+ 'COMPANY_NAME': u'\u5317\u4eac\u97e9\u4f9d\u9177\u548c\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'Pzoz2015\u79cb\u65b0\u6b3e\u5b9a\u5236\u538b\u82b1\u9762\u6599\u767e\u642d\u68d2\u7403\u670d\u77ed\u5916\u5957\u663e\u7626\u4e0d\u6311\u4eba H4188',
+ 'GOODS_PRICE': u'499.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520070199042&skuId=3100324953112&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=1856824663&is_b=1',
+ 'SHOP_NAME': u'pzoz\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFgbMCgyMmxLvWTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520992431810&skuId=3104636219302&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=925945766&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520992431810&skuId=3104636219302&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=925945766&is_b=1>
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521037141907&skuId=3104847278404&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=913099165&is_b=1>
+{'COMPANY_ADDRESS': u'\u8862\u5dde\u5361\u5494\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u886c\u886b\u5973\u957f\u8896 2015\u65b0\u6b3e\u79cb\u88c5\u5973\u88c5\u6253\u5e95\u886c\u8863 \u5370\u82b1\u97e9\u7248\u96ea\u7eba\u5a03\u5a03\u9886\u6f6e\u4e0a\u8863',
+ 'GOODS_PRICE': u'129.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521037141907&skuId=3104847278404&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=913099165&is_b=1',
+ 'SHOP_NAME': u'\u4e00\u7c73\u9633\u5149\u670d\u9970\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UOFHGvmkSvFxb.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=521131492170&skuId=3105241919974&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=696944415&is_b=1> from <GET http://detail.tmall.com/item.htm?id=521131492170&skuId=3105241919974&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=696944415&is_b=1>
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520597694276&skuId=3105092216809&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1862662631&is_b=1>
+{'COMPANY_ADDRESS': u'\u6d59\u6c5f,  \u5609\u5174',
+ 'COMPANY_NAME': u'\u5609\u5174\u88c1\u7f1d\u738b\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u4e2d\u8001\u5e74\u5973\u88c5\u79cb\u88c5\u857e\u4e1d\u771f\u4e24\u4ef6\u5957\u5988\u5988\u88c5\u957f\u8896\u7ee3\u82b1\u96ea\u7eba\u91d1\u4e1d\u7ed2\u8fde\u8863\u88d9\u5957\u88c5',
+ 'GOODS_PRICE': u'129.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520597694276&skuId=3105092216809&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1862662631&is_b=1',
+ 'SHOP_NAME': u'\u98ce\u5962\u5c1a\u54c1\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFgLvCxLvCxGvQTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=38089988675&skuId=61457328552&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=737182747&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=40253408068&skuId=98043632648&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2086017057&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=38089988675&skuId=61457328552&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=737182747&is_b=1>
+{'COMPANY_ADDRESS': u'\u53a6\u95e8\u8def\u6155\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u79cb\u88c5\u8fde\u8863\u88d92015\u65b0\u6b3e\u5973\u88c5\u6c14\u8d28V\u9886\u4e03\u5206\u8896OL\u901a\u52e4\u6536\u8170\u5927\u7801\u804c\u4e1a\u4fee\u8eab',
+ 'GOODS_PRICE': u'169.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=38089988675&skuId=61457328552&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=737182747&is_b=1',
+ 'SHOP_NAME': u'roammovo\u8def\u6155\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UMGvuvFgyMGQu.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521119213104&skuId=3108117633376&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2215301223&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=35904430419&skuId=96955964107&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=758852182&is_b=1> from <GET http://detail.tmall.com/item.htm?id=35904430419&skuId=96955964107&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=758852182&is_b=1>
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=40253408068&skuId=98043632648&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2086017057&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u4e2d\u5c71\u5e02',
+ 'COMPANY_NAME': u'\u4e2d\u5c71\u5e02\u97e9\u517d\u7535\u5b50\u5546\u52a1\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u97e9\u517d \u97e9\u7248\u79cb\u88c5\u677e\u7d27\u8170\u5b66\u751f\u4f11\u95f2\u88e4\u5bbd\u677e\u725b\u4ed4\u54c8\u4f26\u88e4 \u5973\u590f\u5c0f\u811a\u957f\u88e4\u6f6e',
+ 'GOODS_PRICE': u'89.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=40253408068&skuId=98043632648&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2086017057&is_b=1',
+ 'SHOP_NAME': u'\u97e9\u517d\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCN4MCNYMGNbMWTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521056766821&skuId=3104899307183&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1925481788&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=41521872446&skuId=71493731589&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=729863055&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521119213104&skuId=3108117633376&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2215301223&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c,  \u4e1c\u839e',
+ 'COMPANY_NAME': u'\u4e1c\u839e\u5e02\u4f9d\u8f69\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u6253\u5e95\u886b\u5973\u79cb\u51ac2015\u65b0\u6b3e\u957f\u8896\u4e2d\u957f\u6b3e\u5305\u81c0\u97e9\u7248\u767d\u8272\u4e0a\u8863\u4fee\u8eab\u663e\u75e9\u68c9t\u6064',
+ 'GOODS_PRICE': u'69.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521119213104&skuId=3108117633376&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2215301223&is_b=1',
+ 'SHOP_NAME': u'\u97e9\u670d\u8def\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCIYMFvWvFIyvWTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=43309801894&skuId=82535222397&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1703111046&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=40758710071&skuId=61426546659&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2177189982&is_b=1> from <GET http://detail.tmall.com/item.htm?id=40758710071&skuId=61426546659&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2177189982&is_b=1>
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520675265126&skuId=3103157931024&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1946786895&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521056766821&skuId=3104899307183&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1925481788&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u5e7f\u5dde\u5e02',
+ 'COMPANY_NAME': u'\u5e7f\u5dde\u4e00\u671d\u5546\u8d38\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'2015\u79cb\u51ac\u65b0\u6b3e\u97e9\u7248\u5973\u58eb\u4e2d\u8170\u725b\u4ed4\u88e4\u5973\u957f\u88e4\u5f39\u529b\u663e\u7626\u5c0f\u811a\u94c5\u7b14\u88e4\u88e4\u5b50\u6f6e',
+ 'GOODS_PRICE': u'99.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521056766821&skuId=3104899307183&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1925481788&is_b=1',
+ 'SHOP_NAME': u'dominic\u5ea6\u660e\u5c3c\u5361\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFkyMFQ4vFc4ONTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520877630767&skuId=3104086701697&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=281066853&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520877630767&skuId=3104086701697&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=281066853&is_b=1>
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=41521872446&skuId=71493731589&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=729863055&is_b=1>
+{'COMPANY_ADDRESS': u'\u4e1c\u839e\u5e02\u7d22\u5983\u5a05\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'2015\u79cb\u88c5\u65b0\u54c1\u65f6\u5c1a\u9488\u7ec7\u4e24\u4ef6\u5957\u88c5\u8fde\u8863\u88d9\u79cb \u97e9\u7248\u957f\u8896\u79cb\u51ac\u6253\u5e95\u8fde\u8863\u88d9',
+ 'GOODS_PRICE': u'139.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=41521872446&skuId=71493731589&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=729863055&is_b=1',
+ 'SHOP_NAME': u'\u82b3\u9999\u4e4b\u57ce\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UMGISOmxGvm8b.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521112503640&skuId=3105238366051&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1852243062&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521269299152&skuId=3105937623290&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1764612547&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=45581468273&skuId=86942713991&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2143710844&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=43309801894&skuId=82535222397&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1703111046&is_b=1>
+{'COMPANY_ADDRESS': u'\u4e0a\u6d77\u6765\u745c\u5546\u8d38\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u6653\u96ef2015\u79cb\u5b63\u65b0\u6b3e\u97e9\u7248\u5927\u7801\u9ad8\u8170\u5f39\u529b\u5c0f\u811a\u94c5\u7b14\u9ed1\u8272\u725b\u4ed4\u88e4\u5973\u663e\u7626\u957f\u88e4',
+ 'GOODS_PRICE': u'99.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=43309801894&skuId=82535222397&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1703111046&is_b=1',
+ 'SHOP_NAME': u'\u6653\u96ef\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFcWvGHYvFN0MgTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520887871106&skuId=3104192472797&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2133725026&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520887871106&skuId=3104192472797&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2133725026&is_b=1>
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=37767532565&skuId=96778640262&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2012681236&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Redirecting (302) to <GET https://detail.tmall.com/item.htm?id=520876313657&skuId=3104076898298&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2041039495&is_b=1> from <GET http://detail.tmall.com/item.htm?id=520876313657&skuId=3104076898298&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2041039495&is_b=1>
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520675265126&skuId=3103157931024&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1946786895&is_b=1>
+{'COMPANY_ADDRESS': u'\u5317\u4eac',
+ 'COMPANY_NAME': u'\u5317\u4eac\u7d2b\u8896\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u5c0f\u897f\u88c5\u59732015\u79cb\u88c5\u65b0\u6b3e\u957f\u8896\u5973\u58eb\u5916\u5957\u97e9\u7248\u4fee\u8eab\u8377\u53f6\u8fb9\u77ed\u6b3e\u7cd6\u679c\u8272\u897f\u670d',
+ 'GOODS_PRICE': u'68.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520675265126&skuId=3103157931024&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1946786895&is_b=1',
+ 'SHOP_NAME': u'\u838e\u83c1\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFk0MCc4MCgSMQTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521312426699&skuId=3106152020782&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=2266950171&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521112503640&skuId=3105238366051&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1852243062&is_b=1>
+{'COMPANY_ADDRESS': u'\u6d59\u6c5f\u7701,  \u676d\u5dde\u5e02',
+ 'COMPANY_NAME': u'\u676d\u5dde\u6b4c\u5154\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u6b4c\u5154 \u6bdb\u5462\u5916\u5957\u5973\u4e2d\u957f\u6b3e2015\u79cb\u51ac\u88c5\u65b0\u6b3e\u4fee\u8eab\u5b66\u9662\u98ce\u5973\u88c5\u5462\u5b50\u5927\u8863\u6f6e',
+ 'GOODS_PRICE': u'128.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521112503640&skuId=3105238366051&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1852243062&is_b=1',
+ 'SHOP_NAME': u'\u6b4c\u5154\u670d\u9970\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFgbvCI0vGNLvgTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=521131492170&skuId=3105241919974&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=696944415&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521269299152&skuId=3105937623290&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1764612547&is_b=1>
+{'COMPANY_ADDRESS': u'\u6d59\u6c5f,  \u676d\u5dde',
+ 'COMPANY_NAME': u'\u676d\u5dde\u8513\u8bd7\u8482\u8d38\u6613\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'2015\u79cb\u5b63\u65b0\u6b3e\u97e9\u7248\u9488\u7ec7\u886b\u5973\u5f00\u886b\u4e2d\u957f\u6b3e\u6d41\u82cf\u5927\u7801\u5bbd\u677e\u6bdb\u8863\u62ab\u80a9\u5916\u5957',
+ 'GOODS_PRICE': u'79.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521269299152&skuId=3105937623290&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=1764612547&is_b=1',
+ 'SHOP_NAME': u'\u5c1a\u54c1\u6c5f\u5357\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvFcLMmxYvC80MWTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=45581468273&skuId=86942713991&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2143710844&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u4e2d\u5c71\u5e02',
+ 'COMPANY_NAME': u'\u4e2d\u5c71\u5e02\u7231\u6f6e\u7535\u5b50\u5546\u52a1\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u6211\u7684\u5236\u9020\u5973\u738b\u590f\u5b63\u65b0\u6b3e\u97e9\u56fd\u9ad8\u8170\u4e5d\u5206\u94c5\u7b14\u88e4\u4fee\u8eab\u5c0f\u811a\u88e4\u5f39\u529b\u725b\u4ed4\u88e4\u5973',
+ 'GOODS_PRICE': u'79.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=45581468273&skuId=86942713991&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2143710844&is_b=1',
+ 'SHOP_NAME': u'\u6211\u7684\u5236\u9020\u5973\u738b\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCH0vGcYvmg0MNTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520992431810&skuId=3104636219302&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=925945766&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=37767532565&skuId=96778640262&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2012681236&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u4e1c\u839e\u5e02',
+ 'COMPANY_NAME': u'\u4e1c\u839e\u5e02\u66fc\u8bed\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u8303\u5c3c\u62c92015\u79cb\u65b0v\u9886\u77ed\u8896t\u6064\u5bbd\u677e\u957f\u8896\u5973\u5f0ft\u6064\u663e\u7626\u5927\u7801\u5973\u88c5\u65f6\u5c1a\u5973t\u6064',
+ 'GOODS_PRICE': u'59.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=37767532565&skuId=96778640262&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2012681236&is_b=1',
+ 'SHOP_NAME': u'\u8303\u5c3c\u62c9\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCNYvCx4vFIGMgTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521312426699&skuId=3106152020782&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=2266950171&is_b=1>
+{'COMPANY_ADDRESS': u'\u6c5f\u82cf\u7701,  \u82cf\u5dde\u5e02',
+ 'COMPANY_NAME': u'\u82cf\u5dde\u5e02\u5434\u6c5f\u8863\u70ab\u5230\u5e95\u9488\u7ec7\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'2015\u79cb\u51ac\u88c5\u65b0\u6b3e \u97e9\u7248\u957f\u8896\u68d2\u7403\u670d\u5370\u82b1\u5939\u514b\u68d2\u7403\u886b \u77ed\u6b3e\u5916\u5957\u8584\u4e0a\u8863\u5973',
+ 'GOODS_PRICE': u'128.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521312426699&skuId=3106152020782&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=2266950171&is_b=1',
+ 'SHOP_NAME': u'\u853b\u56fe\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCILMCkbvmHuvQTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=40758710071&skuId=61426546659&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2177189982&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=521131492170&skuId=3105241919974&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=696944415&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u5dde\u5361\u543e\u62c9\u5fc6\u95f4\u8d38\u6613\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u97e9\u7248\u65e9\u79cb\u65b0\u6b3e2015\u62fc\u63a5\u5370\u82b1\u957f\u8896\u663e\u7626\u6253\u5e95\u5957\u88c5\u8fde\u8863\u88d9\u9ad8\u8170A\u5b57\u77ed\u88d9',
+ 'GOODS_PRICE': u'109.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=521131492170&skuId=3105241919974&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&standard=1&user_id=696944415&is_b=1',
+ 'SHOP_NAME': u'\u5c0f\u610f\u8fbe\u7684\u82b1\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UMCkLOFQ0MmHb.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520992431810&skuId=3104636219302&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=925945766&is_b=1>
+{'COMPANY_ADDRESS': u'\u4e0a\u6d77\u739b\u601d\u72c4\u62c9\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u739b\u601d\u72c4\u62c92015\u5f00\u886b\u5973\u79cb\u88c5\u65b0\u6b3e\u6bdb\u8863\u767e\u642d\u4e2d\u957f\u6b3e\u9488\u7ec7\u886b\u62fc\u8272\u6bdb\u8863\u5916\u5957\u6f6e',
+ 'GOODS_PRICE': u'168.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520992431810&skuId=3104636219302&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=925945766&is_b=1',
+ 'SHOP_NAME': u'\u739b\u601d\u72c4\u62c9\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UOFIbOFQbMGxL.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520887871106&skuId=3104192472797&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2133725026&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520876313657&skuId=3104076898298&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2041039495&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=40758710071&skuId=61426546659&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2177189982&is_b=1>
+{'COMPANY_ADDRESS': u'\u4e0a\u6d77,  \u4e0a\u6d77\u5e02',
+ 'COMPANY_NAME': u'\u4e0a\u6d77\u4e00\u8d77\u6765\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u4f9d\u8bd7\u6b272015\u6625\u79cb\u88c5\u65b0\u54c1\u4e2d\u957f\u6b3e\u4fee\u8eab\u6c14\u8d28\u6dd1\u5973\u97e9\u7248\u5973\u5f0f\u98ce\u8863\u5973\u88c5\u5916\u5957',
+ 'GOODS_PRICE': u'149.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=40758710071&skuId=61426546659&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2177189982&is_b=1',
+ 'SHOP_NAME': u'\u4f9d\u8bd7\u6b27\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCHuMGH4OFk4vgTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=35904430419&skuId=96955964107&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=758852182&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=520877630767&skuId=3104086701697&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=281066853&is_b=1> (referer: https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10)
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520887871106&skuId=3104192472797&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2133725026&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u5e7f\u5dde\u5e02',
+ 'COMPANY_NAME': u'\u5e7f\u5dde\u8bda\u8c1b\u5546\u8d38\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'2015\u79cb\u5b63\u65b0\u6b3e\u97e9\u7248\u5973 \u4f11\u95f2\u5bbd\u677e\u767e\u642dV\u9886\u62fc\u63a5\u957f\u8896\u68c9\u886c\u8863 \u886c\u886b\u5927\u7801\u6f6e',
+ 'GOODS_PRICE': u'59.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520887871106&skuId=3104192472797&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2133725026&is_b=1',
+ 'SHOP_NAME': u'\u6c99\u83f2\u5229\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCHGvGcyMFNyMgTT.htm'}
+2015-09-28 19:56:49 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520876313657&skuId=3104076898298&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2041039495&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u4e1c\u7701,  \u4e1c\u839e\u5e02',
+ 'COMPANY_NAME': u'\u4e1c\u839e\u5e02\u9b45\u5353\u670d\u9970\u6709\u9650\u516c\u53f8',
+ 'GOODS_NAME': u'\u767d\u8272\u886c\u886b\u5973\u957f\u88962015\u79cb\u88c5\u97e9\u7248\u4fee\u8eab\u804c\u4e1aOL\u6b63\u88c5\u5973\u88c5\u5de5\u88c5\u6253\u5e95\u5973\u58eb\u886c\u8863',
+ 'GOODS_PRICE': u'69.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520876313657&skuId=3104076898298&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=2041039495&is_b=1',
+ 'SHOP_NAME': u'\u4f0a\u79e6\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCN0vFNGOFQSMQTT.htm'}
+2015-09-28 19:56:50 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=35904430419&skuId=96955964107&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=758852182&is_b=1>
+{'COMPANY_ADDRESS': u'\u5e7f\u5dde\u4f51\u7950\u8d38\u6613\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u5973\u58eb2015\u767d\u8272\u886c\u886b\u5973\u590f\u886c\u8863\u5973\u957f\u8896\u97e9\u7248\u4fee\u8eab\u804c\u4e1aOL\u5973\u88c5\u5927\u7801\u5b66\u751f\u79cb\u5b63',
+ 'GOODS_PRICE': u'89.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=35904430419&skuId=96955964107&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=758852182&is_b=1',
+ 'SHOP_NAME': u'\u6cfd\u660e\u65af\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UMG84Om8yvFgy.htm'}
+2015-09-28 19:56:50 [scrapy] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=520877630767&skuId=3104086701697&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=281066853&is_b=1>
+{'COMPANY_ADDRESS': u'\u6c55\u5934\u5e02\u5e7f\u7eb3\u8d38\u6613\u6709\u9650\u516c\u53f8',
+ 'COMPANY_NAME': u'',
+ 'GOODS_NAME': u'\u536b\u8863\u5973\u5f00\u886b\u8fd0\u52a8\u4f11\u95f2\u6625\u79cb\u827e\u7c73\u604b\u79cb\u88c5\u8fde\u5e3d\u957f\u8896\u8584\u6b3e\u5b66\u751f\u4e0a\u8863\u62c9\u94fe\u5916\u5957',
+ 'GOODS_PRICE': u'99.00',
+ 'GOODS_URL': u'http://detail.tmall.com/item.htm?id=520877630767&skuId=3104086701697&areaId=110000&cat_id=50025135&rn=25afd6491269da3f8c296dfcfdb9ef17&user_id=281066853&is_b=1',
+ 'SHOP_NAME': u'\u827e\u7c73\u604b\u65d7\u8230\u5e97',
+ 'SHOP_URL': u'https://rate.taobao.com/user-rate-UvCgYvmxLOm8G.htm'}
+2015-09-28 19:56:50 [scrapy] INFO: Closing spider (finished)
+2015-09-28 19:56:50 [scrapy] INFO: Stored csv feed (65 items) in: aa.csv
+2015-09-28 19:56:50 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 75286,
+ 'downloader/request_count': 127,
+ 'downloader/request_method_count/GET': 127,
+ 'downloader/response_bytes': 1419509,
+ 'downloader/response_count': 127,
+ 'downloader/response_status_count/200': 62,
+ 'downloader/response_status_count/302': 65,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2015, 9, 28, 11, 56, 50, 73000),
+ 'item_scraped_count': 65,
+ 'log_count/DEBUG': 193,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 62,
+ 'scheduler/dequeued': 127,
+ 'scheduler/dequeued/memory': 127,
+ 'scheduler/enqueued': 127,
+ 'scheduler/enqueued/memory': 127,
+ 'start_time': datetime.datetime(2015, 9, 28, 11, 56, 44, 219000)}
+2015-09-28 19:56:50 [scrapy] INFO: Spider closed (finished)
