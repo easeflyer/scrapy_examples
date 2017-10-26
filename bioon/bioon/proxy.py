@@ -1,7 +1,9 @@
-from .handledb import exec_sql
 import urllib.request, urllib.error, urllib.parse
+import pdb
 
 from bioon.settings import DBKWARGS
+from .handledb import exec_sql
+
 
 kwargs = DBKWARGS
 
@@ -65,6 +67,7 @@ class GetIp(Singleton):
         http_url = "http://www.baidu.com/"
         https_url = "https://www.alipay.com/"
         proxy_type = record['type'].lower()
+        pdb.set_trace()
         url = http_url if proxy_type == "http" else https_url
         proxy = "%s:%s" % (record['ip'], record['port'])
         try:

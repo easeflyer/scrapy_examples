@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import json
+import pdb
 import scrapy
 from scrapy import FormRequest
 from scrapy.mail import MailSender
@@ -101,7 +102,6 @@ class BioonspiderSpider(scrapy.Spider):
         return item
 
     def closed(self, reason):
-        import pdb
         pdb.set_trace()
         self.logger.info("Spider closed: %s" % str(reason))
         mailer = MailSender.from_settings(self.settings)
