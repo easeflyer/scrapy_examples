@@ -52,8 +52,9 @@ class BioonspiderSpider(scrapy.Spider):
         }
 
         # 模拟登录请求
-        return FormRequest(
-            end_login,
+        return scrapy.FormRequest.from_response(
+            response,
+            formid='formid ',
             formdata=formdata,
             headers=headers,
             cookies=cookies,
