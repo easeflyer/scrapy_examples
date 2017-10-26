@@ -69,38 +69,15 @@ class GetIp(Singleton):
         exec_sql(sql, **kwargs)
         print(record, " was deleted.")
 
-    def judge_ip(self, record):
-        '''Judge IP can use or not'''
-        http_url = "http://www.baidu.com/"
-        https_url = "https://www.alipay.com/"
-        proxy_type = record['type'].lower()
-        pdb.set_trace()
-        url = http_url if proxy_type == "http" else https_url
-        proxy = "%s:%s" % (record['ip'], record['port'])
-        try:
-            req = urllib.request.Request(url=url)
-            req.set_proxy(proxy, proxy_type)
-            response = urllib.request.urlopen(req, timeout=30)
-        except Exception as e:
-            print("Request Error:", e)
-            self.del_ip(record)
-            return False
-        else:
-            code = response.getcode()
-            if code >= 200 and code < 300:
-                print('Effective proxy', record)
-                return True
-            else:
-                print('Invalide proxy', record)
-                self.del_ip(record)
-                return False
-
     def get_ipport_list(self):
         print("Proxy getip was executed.")
+        pdb.set_trace()
         if self.result:
-            validated_proxy_http, validated_proxy_https = validateIp(self.result)
+            validated_proxy_http, validated_proxy_https, outdated = validateIp(self.result)
             print("validated_proxy_http:{}, validated_proxy_https:{}".format(len(validated_proxy_http),
                                                                              len(validated_proxy_https)))
+            if outdated:
+                [self.del_ip(item) for item in outdated]
             return {"http": validated_proxy_http, "https": validated_proxy_https}
         return None
 
@@ -109,19 +86,21 @@ def validateIp(proxy):
     socket.setdefaulttimeout(3)
     validated_proxy_http = []
     validated_proxy_https = []
+    outdated = []
     for i in range(0, len(proxy)):
+        ip = proxy[i]['ip']
+        port = proxy[i]['port']
+        type = proxy[i]['type']
+        proxy_ip_port = type + '://' + ip + ":" + port
+        url_ = URLS[random.randint(0, len(URLS) - 1)]
         try:
-            ip = proxy[i]['ip']
-            port = proxy[i]['port']
-            type = proxy[i]['type']
-            proxy_ip_port = type + '://' + ip + ":" + port
-            url_ = URLS[random.randint(0, len(URLS) - 1)]
             _get_data_withproxy(url_, type=type, proxy_ip_port=proxy_ip_port, data=None)
             validated_proxy_http.append(proxy_ip_port) if type == 'http' else validated_proxy_https.append(
                 proxy_ip_port)
         except Exception as e:
+            outdated.append(proxy[i])
             continue
-    return validated_proxy_http, validated_proxy_https
+    return validated_proxy_http, validated_proxy_https, outdated
 
 
 def _get_data_withproxy(url, type='http', proxy_ip_port=None, data=None):
