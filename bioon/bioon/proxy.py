@@ -59,7 +59,7 @@ class GetIp(Singleton):
         WHERE `type` REGEXP  'HTTP|HTTPS'
         AND  `speed`<5 OR `speed` IS NULL
         ORDER BY `type` ASC
-        LIMIT 200 '''
+        LIMIT 50 '''
         self.result = exec_sql(sql, **kwargs)
 
     def del_ip(self, record):
@@ -77,7 +77,6 @@ class GetIp(Singleton):
                                                                              len(validated_proxy_https)))
             if outdated:
                 [self.del_ip(item) for item in outdated]
-            pdb.set_trace()
             return {"http": validated_proxy_http, "https": validated_proxy_https}
         return None
 
