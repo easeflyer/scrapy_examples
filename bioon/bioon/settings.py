@@ -27,21 +27,35 @@ DOWNLOADER_MIDDLEWARES = {
     'bioon.middlewares.ProxyMiddleware': 90,
 }
 
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0'
+USER_AGENT = "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36"
+# Obey robots.txt rules
+ROBOTSTXT_OBEY = False
+DOWNLOAD_DELAY = 3
+CONCURRENT_REQUESTS_PER_IP = 4
 
-# 保存项目中启用的pipeline及其顺序的字典。该字典默认为空，值(value)任意。
-# 不过值(value)习惯设定在0-1000范围内。
+# Override the default request headers:
+DEFAULT_REQUEST_HEADERS = {
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4',
+}
+
 ITEM_PIPELINES = {
     'bioon.pipelines.BioonPipeline': 500
 }
 
-# 下载器下载网站页面时需要等待的时间。该选项可以用来限制爬取速度，
-# 减轻服务器压力。同时也支持小数:
-DOWNLOAD_DELAY = 0.25  # 250 ms of delay
-
-# 爬取网站最大允许的深度(depth)值。如果为0，则没有限制。
-DEPTH_LIMIT = 0
+# Enable and configure the AutoThrottle extension (disabled by default)
+# See https://docs.scrapy.org/en/latest/topics/autothrottle.html
+AUTOTHROTTLE_ENABLED = True
+# The initial download delay
+AUTOTHROTTLE_START_DELAY = 5
+# The maximum download delay to be set in case of high latencies
+AUTOTHROTTLE_MAX_DELAY = 60
+# The average number of requests Scrapy should be sending in parallel to
+# each remote server
+AUTOTHROTTLE_TARGET_CONCURRENCY = 3
+# Enable showing throttling stats for every response received:
+AUTOTHROTTLE_DEBUG = False
 
 # 是否启用DNS内存缓存(DNS in-memory cache)。默认: True
 DNSCACHE_ENABLED = True
