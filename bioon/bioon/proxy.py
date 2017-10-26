@@ -9,10 +9,12 @@ from .ipadd import IPPOOL_BACKUP_HTTP, IPPOOL_BACKUP_HTTPS
 
 kwargs = DBKWARGS
 
-URLS = [
+URLS_HTTP = [
     r"http://ip.chinaz.com/getip.aspx",
     r'http://httpbin.org/ip',
-    r'http://python.org/',
+]
+URLS_HTTPS = [
+    r'https://www.python.org/',
 ]
 
 
@@ -100,12 +102,14 @@ def validateIp(proxy):
     for i in range(0, len(proxy)):
         ip = proxy[i]['ip']
         port = proxy[i]['port']
-        type = proxy[i]['type'].lower()
+        type = proxy[i]['type'].lower().strip()
+        is_http = type == 'http'
         proxy_ip_port = type + '://' + ip + ":" + port
-        url_ = URLS[random.randint(0, len(URLS) - 1)]
+        url_ = URLS_HTTP[random.randint(0, len(URLS_HTTP) - 1)] if is_http else \
+            URLS_HTTPS[random.randint(0, len(URLS_HTTPS) - 1)]
         try:
             _get_data_withproxy(url_, type=type, proxy_ip_port=proxy_ip_port, data=None)
-            validated_proxy_http.append(ip + ":" + port) if type == 'http' else validated_proxy_https.append(
+            validated_proxy_http.append(ip + ":" + port) if is_http else validated_proxy_https.append(
                 ip + ":" + port)
         except Exception as e:
             outdated.append(proxy[i])
