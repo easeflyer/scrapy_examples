@@ -3,7 +3,7 @@
 import base64
 from proxy import GetIp,counter
 from scrapy import log
-ips=GetIp().get_ips()
+ips=GetIp().get_ipport_list()
 
 class ProxyMiddleware(object):
     http_n=0     #counter for http requests

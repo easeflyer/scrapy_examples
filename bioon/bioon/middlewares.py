@@ -3,7 +3,7 @@
 from .proxy import GetIp, counter
 from scrapy import log
 
-ips = GetIp().get_ips()
+ipports_dict = GetIp().get_ipport_list()
 
 
 class ProxyMiddleware(object):
@@ -15,14 +15,14 @@ class ProxyMiddleware(object):
         # Set the location of the proxy
         if request.url.startswith("http://"):
             n = ProxyMiddleware.http_n
-            n = n if n < len(ips['http']) else 0
-            request.meta['proxy'] = "http://%s:%d" % (ips['http'][n][0], int(ips['http'][n][1]))
-            log.msg('Squence - http: %s - %s' % (n, str(ips['http'][n])))
+            n = n if n < len(ipports_dict['http']) else 0
+            request.meta['proxy'] = "%s" % (ipports_dict['http'][n])
+            log.msg('Squence of http %d - %s' % (n, str(ipports_dict['http'][n])))
             ProxyMiddleware.http_n = n + 1
 
         if request.url.startswith("https://"):
             n = ProxyMiddleware.https_n
-            n = n if n < len(ips['https']) else 0
-            request.meta['proxy'] = "https://%s:%d" % (ips['https'][n][0], int(ips['https'][n][1]))
-            log.msg('Squence - https: %s - %s' % (n, str(ips['https'][n])))
+            n = n if n < len(ipports_dict['https']) else 0
+            request.meta['proxy'] = "%s" % (ipports_dict['https'][n])
+            log.msg('Squence of https %d - %s' % (n, str(ipports_dict['https'][n])))
             ProxyMiddleware.https_n = n + 1

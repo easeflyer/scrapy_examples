@@ -1,11 +1,18 @@
 import urllib.request, urllib.error, urllib.parse
 import pdb
+import socket
+import random
 
 from bioon.settings import DBKWARGS
 from .handledb import exec_sql
 
-
 kwargs = DBKWARGS
+
+URLS = [
+    r"http://ip.chinaz.com/getip.aspx"
+    r'http://httpbin.org/ip'
+    r'http://python.org/'
+]
 
 
 def counter(start_at=0):
@@ -88,11 +95,43 @@ class GetIp(Singleton):
                 self.del_ip(record)
                 return False
 
-    def get_ips(self):
+    def get_ipport_list(self):
         print("Proxy getip was executed.")
-        http = [h['ip'].decode('utf-8') + ':' + h['port'].decode('utf-8') for h in self.result if
-                h['type'] == "HTTP" and self.judge_ip(h)]
-        https = [h['ip'].decode('utf-8') + ':' + h['port'].decode('utf-8') for h in self.result if
-                 h['type'] == "HTTPS" and self.judge_ip(h)]
-        print("Http: ", len(http), "Https: ", len(https))
-        return {"http": http, "https": https}
+        if self.result:
+            validated_proxy_http, validated_proxy_https = validateIp(self.result)
+            print("validated_proxy_http:{}, validated_proxy_https:{}".format(len(validated_proxy_http),
+                                                                             len(validated_proxy_https)))
+            return {"http": validated_proxy_http, "https": validated_proxy_https}
+        return None
+
+
+def validateIp(proxy):
+    socket.setdefaulttimeout(3)
+    validated_proxy_http = []
+    validated_proxy_https = []
+    for i in range(0, len(proxy)):
+        try:
+            ip = proxy[i]['ip']
+            port = proxy[i]['port']
+            type = proxy[i]['type']
+            proxy_ip_port = type + '://' + ip + ":" + port
+            url_ = URLS[random.randint(0, len(URLS) - 1)]
+            _get_data_withproxy(url_, type=type, proxy_ip_port=proxy_ip_port, data=None)
+            validated_proxy_http.append(proxy_ip_port) if type == 'http' else validated_proxy_https.append(
+                proxy_ip_port)
+        except Exception as e:
+            continue
+    return validated_proxy_http, validated_proxy_https
+
+
+def _get_data_withproxy(url, type='http', proxy_ip_port=None, data=None):
+    proxy = urllib.request.ProxyHandler({type: proxy_ip_port})  # 设置proxy
+    opener = urllib.request.build_opener(proxy)  # 挂载opener
+    urllib.request.install_opener(opener)  # 安装opener
+    if data:
+        data = urllib.parse.urlencode(data).encode('utf-8')
+        page = opener.open(url, data).read()
+    else:
+        page = opener.open(url).read()
+    page = page.decode('utf-8')
+    return page
