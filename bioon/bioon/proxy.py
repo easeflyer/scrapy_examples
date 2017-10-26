@@ -58,7 +58,7 @@ class GetIp(Singleton):
         FROM  `ips`
         WHERE `type` REGEXP  'HTTP|HTTPS'
         AND  `speed`<5 OR `speed` IS NULL
-        AND `type`={}
+        AND `type`='{}'
         ORDER BY `type` ASC
         LIMIT 25 '''
         http_rs = exec_sql(sql.format('HTTP'), **kwargs)
