@@ -24,4 +24,3 @@ class StackOverflowSpider(scrapy.Spider):
         ).extract()
         if ele:
             print("success")
-           
