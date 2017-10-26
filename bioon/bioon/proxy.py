@@ -87,7 +87,9 @@ class GetIp(Singleton):
 
     def get_ips(self):
         print("Proxy getip was executed.")
-        http = [h[0:2] for h in self.result if h[2] == "HTTP" and self.judge_ip(h)]
-        https = [h[0:2] for h in self.result if h[2] == "HTTPS" and self.judge_ip(h)]
+        http = [h['ip'].decode('utf-8') + ':' + h['port'].decode('utf-8') for h in self.result if
+                h['type'] == "HTTP" and self.judge_ip(h)]
+        https = [h['ip'].decode('utf-8') + ':' + h['port'].decode('utf-8') for h in self.result if
+                 h['type'] == "HTTPS" and self.judge_ip(h)]
         print("Http: ", len(http), "Https: ", len(https))
         return {"http": http, "https": https}
