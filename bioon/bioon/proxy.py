@@ -58,9 +58,13 @@ class GetIp(Singleton):
         FROM  `ips`
         WHERE `type` REGEXP  'HTTP|HTTPS'
         AND  `speed`<5 OR `speed` IS NULL
+        AND `type`={}
         ORDER BY `type` ASC
-        LIMIT 50 '''
-        self.result = exec_sql(sql, **kwargs)
+        LIMIT 25 '''
+        http_rs = exec_sql(sql.format('HTTP'), **kwargs)
+        self.result = http_rs
+        https_rs = exec_sql(sql.format('HTTPS'), **kwargs)
+        self.result.extend(https_rs)
 
     def del_ip(self, record):
         '''delete ip that can not use'''
