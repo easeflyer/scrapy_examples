@@ -11,7 +11,6 @@ import scrapy
 class BioonItem(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()
-    source =scrapy.Field()
+    source = scrapy.Field()
     date_time = scrapy.Field()
     body = scrapy.Field()
-    

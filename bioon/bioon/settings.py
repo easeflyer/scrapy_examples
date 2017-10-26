@@ -13,7 +13,7 @@ import sys
 
 # Root path of project
 PROJECT_ROOT = os.path.normpath(os.path.dirname(os.path.dirname(__file__)))
-print('PROJECT_ROOT:{}'.format(PROJECT_ROOT))
+print(('PROJECT_ROOT:{}'.format(PROJECT_ROOT)))
 
 # Scrapy项目实现的bot的名字(也为项目名称)。
 BOT_NAME = 'bioon'
@@ -93,6 +93,6 @@ MAIL_SSL = False
 
 # from settings_local reload config
 try:
-    from settings_local import *
+    from .settings_local import *
 except ImportError:
     pass
