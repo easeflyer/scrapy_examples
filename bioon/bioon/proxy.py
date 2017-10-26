@@ -55,7 +55,7 @@ class GetIp(Singleton):
 
     def del_ip(self, record):
         '''delete ip that can not use'''
-        sql = "delete from ips where ip='%s' and port='%s'" % (record[0], record[1])
+        sql = "delete from ips where ip='%s' and port='%s'" % (record['ip'], record['port'])
         print(sql)
         exec_sql(sql, **kwargs)
         print(record, " was deleted.")
@@ -64,9 +64,9 @@ class GetIp(Singleton):
         '''Judge IP can use or not'''
         http_url = "http://www.baidu.com/"
         https_url = "https://www.alipay.com/"
-        proxy_type = record[2].lower()
+        proxy_type = record['type'].lower()
         url = http_url if proxy_type == "http" else https_url
-        proxy = "%s:%s" % (record[0], record[1])
+        proxy = "%s:%s" % (record['ip'], record['port'])
         try:
             req = urllib.request.Request(url=url)
             req.set_proxy(proxy, proxy_type)
