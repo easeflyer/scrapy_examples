@@ -105,7 +105,7 @@ class BioonspiderSpider(scrapy.Spider):
 
     def closed(self, reason):
         pdb.set_trace()
-        self.logger.info("Spider closed: %s" % str(reason))
+        self.logger.info("Spider closed: {}".format(reason))
         mailer = MailSender.from_settings(self.settings)
         mailer.send(
             to=settings.ADMINS,
