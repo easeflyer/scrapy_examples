@@ -5,6 +5,7 @@ import random
 
 from bioon.settings import DBKWARGS
 from .handledb import exec_sql
+from .ipadd import IPPOOL_BACKUP_HTTP, IPPOOL_BACKUP_HTTPS
 
 kwargs = DBKWARGS
 
@@ -56,14 +57,16 @@ class GetIp(Singleton):
     def __init__(self):
         sql = '''SELECT  `ip`,`port`,`type`
         FROM  `ips`
-        WHERE `type` REGEXP  'HTTP|HTTPS'
-        AND  `speed`<5 OR `speed` IS NULL
-        AND `type`='{}'
-        ORDER BY `type` ASC
+        WHERE `type`='{}'
+        ORDER BY `speed` ASC
         LIMIT 25 '''
-        http_rs = exec_sql(sql.format('HTTP'), **kwargs)
+        http_sql = sql.format('HTTP')
+        https_sql = sql.format('HTTPS')
+        print("http_sql:{}".format(http_sql))
+        print("https_sql:{}".format(https_sql))
+        http_rs = exec_sql(http_sql, **kwargs)
         self.result = http_rs
-        https_rs = exec_sql(sql.format('HTTPS'), **kwargs)
+        https_rs = exec_sql(https_sql, **kwargs)
         self.result.extend(https_rs)
 
     def del_ip(self, record):
@@ -81,6 +84,10 @@ class GetIp(Singleton):
                                                                              len(validated_proxy_https)))
             if outdated:
                 [self.del_ip(item) for item in outdated]
+            if not validated_proxy_http:
+                validated_proxy_http = IPPOOL_BACKUP_HTTP
+            if not validated_proxy_https:
+                validated_proxy_https = IPPOOL_BACKUP_HTTPS
             return {"http": validated_proxy_http, "https": validated_proxy_https}
         return None
 
@@ -98,8 +105,8 @@ def validateIp(proxy):
         url_ = URLS[random.randint(0, len(URLS) - 1)]
         try:
             _get_data_withproxy(url_, type=type, proxy_ip_port=proxy_ip_port, data=None)
-            validated_proxy_http.append(proxy_ip_port) if type == 'http' else validated_proxy_https.append(
-                proxy_ip_port)
+            validated_proxy_http.append(ip + ":" + port) if type == 'http' else validated_proxy_https.append(
+                ip + ":" + port)
         except Exception as e:
             outdated.append(proxy[i])
             continue

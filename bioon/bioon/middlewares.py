@@ -16,13 +16,13 @@ class ProxyMiddleware(object):
         if request.url.startswith("http://"):
             n = ProxyMiddleware.http_n
             n = n if n < len(ipports_dict['http']) else 0
-            request.meta['proxy'] = "%s" % (ipports_dict['http'][n])
+            request.meta['proxy'] = "http://%s" % (ipports_dict['http'][n])
             log.msg('Squence of http %d - %s' % (n, str(ipports_dict['http'][n])))
             ProxyMiddleware.http_n = n + 1
 
         if request.url.startswith("https://"):
             n = ProxyMiddleware.https_n
             n = n if n < len(ipports_dict['https']) else 0
-            request.meta['proxy'] = "%s" % (ipports_dict['https'][n])
+            request.meta['proxy'] = "https://%s" % (ipports_dict['https'][n])
             log.msg('Squence of https %d - %s' % (n, str(ipports_dict['https'][n])))
             ProxyMiddleware.https_n = n + 1
