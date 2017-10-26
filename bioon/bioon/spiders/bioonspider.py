@@ -56,6 +56,7 @@ class BioonspiderSpider(scrapy.Spider):
             response,
             formid='formid ',
             formdata=formdata,
+            clickdata={'id': 'login-btn'},
             headers=headers,
             cookies=cookies,
             callback=self.after_login
