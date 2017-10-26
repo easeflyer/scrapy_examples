@@ -58,7 +58,7 @@ class TmGoodsSpider(scrapy.Spider):
 
     def parse_recommand(self, response):
 
-        aim_str = re.findall(r'json519\((.*?)\)', response.body)
+        aim_str = re.findall(r'json519\((.*?)\)', response.body.decode('utf-8'))
 
         if aim_str:
             json_obj = json.loads(aim_str[0])
