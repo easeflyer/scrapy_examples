@@ -71,13 +71,13 @@ class GetIp(Singleton):
 
     def get_ipport_list(self):
         print("Proxy getip was executed.")
-        pdb.set_trace()
         if self.result:
             validated_proxy_http, validated_proxy_https, outdated = validateIp(self.result)
             print("validated_proxy_http:{}, validated_proxy_https:{}".format(len(validated_proxy_http),
                                                                              len(validated_proxy_https)))
             if outdated:
                 [self.del_ip(item) for item in outdated]
+            pdb.set_trace()
             return {"http": validated_proxy_http, "https": validated_proxy_https}
         return None
 
