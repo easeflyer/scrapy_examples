@@ -6,14 +6,12 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 from bioon.handledb import adb_insert_data, exec_sql
+from bioon.settings import DBAPI, DBKWARGS
 
 
 class BioonPipeline(object):
     def process_item(self, item, spider):
-        print("Now in pipeline:")
-        print(item['name'])
-        print(item['value'])
-        print("End of pipeline.")
+        print("item:{}".format(item))
         # store data
-        # adb_insert_data(item,"tablename",DBAPI,**DBKWARGS)
+        adb_insert_data(item, "", DBAPI, **DBKWARGS)
         return item

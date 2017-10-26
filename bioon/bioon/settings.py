@@ -23,7 +23,7 @@ NEWSPIDER_MODULE = 'bioon.spiders'
 
 # 保存项目中启用的下载中间件及其顺序的字典。默认:: {}
 DOWNLOADER_MIDDLEWARES = {
-    'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
+    'bioon.middlewares.ProxyMiddleware': 90,
 }
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

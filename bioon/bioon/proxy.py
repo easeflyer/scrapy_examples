@@ -1,29 +1,9 @@
 from .handledb import exec_sql
 import urllib.request, urllib.error, urllib.parse
 
-dbapi = "MySQLdb"
+from bioon.settings import DBKWARGS
 
-from bioon.settings import *
-
-try:  # py3
-    import pymysql
-
-    CURSORCLASS = pymysql.cursors.DictCursor
-    pymysql.install_as_MySQLdb()
-except:  # py2
-    import MySQLdb
-
-    CURSORCLASS = MySQLdb.cursors.DictCursor
-
-kwargs = dict(
-    host=MYSQL_HOST,  # 读取settings中的配置
-    db=MYSQL_DBNAME,
-    user=MYSQL_USER,
-    passwd=MYSQL_PASSWD,
-    charset='utf8',  # 编码要加上，否则可能出现中文乱码问题
-    cursorclass=CURSORCLASS,
-    use_unicode=True,
-)
+kwargs = DBKWARGS
 
 
 def counter(start_at=0):

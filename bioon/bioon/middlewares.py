@@ -1,6 +1,5 @@
 # Importing base64 library because we'll need it ONLY in case if the proxy we are going to use requires authentication
 # -*- coding:utf-8-*-
-import base64
 from .proxy import GetIp, counter
 from scrapy import log
 
