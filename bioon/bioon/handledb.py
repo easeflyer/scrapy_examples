@@ -1,4 +1,4 @@
-# -*- coding:utf-8 -*- 
+# -*- coding:utf-8 -*-
 
 '''
 Function:handle database's any operation
@@ -23,9 +23,13 @@ except:  # py2
 def get_db(**kwargs):
     '''connect database,return link resource'''
     try:
-        db = MySQLdb.connect(**kwargs)
-    except Exception as e:
-        print("Link DB error:", e)
+        db = pymysql.connect(**kwargs)
+    except:
+        try:
+            db = MySQLdb.connect(**kwargs)
+            return db
+        except Exception as e:
+            print("Link DB error:", e)
     else:
         return db
 
