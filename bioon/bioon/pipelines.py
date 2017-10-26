@@ -13,5 +13,5 @@ class BioonPipeline(object):
     def process_item(self, item, spider):
         print("item:{}".format(item))
         # store data
-        adb_insert_data(item, "", DBAPI, **DBKWARGS)
+        adb_insert_data(item, "cfda", DBAPI, **DBKWARGS)
         return item

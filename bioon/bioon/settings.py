@@ -9,7 +9,6 @@
 #
 
 import os
-import sys
 
 # Root path of project
 PROJECT_ROOT = os.path.normpath(os.path.dirname(os.path.dirname(__file__)))
@@ -32,7 +31,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefo
 # 保存项目中启用的pipeline及其顺序的字典。该字典默认为空，值(value)任意。
 # 不过值(value)习惯设定在0-1000范围内。
 ITEM_PIPELINES = {
-    'bioon.pipelines.BioonPipeline':500
+    'bioon.pipelines.BioonPipeline': 500
 }
 
 # 下载器下载网站页面时需要等待的时间。该选项可以用来限制爬取速度，
