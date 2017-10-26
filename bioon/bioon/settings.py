@@ -9,10 +9,12 @@
 #
 
 import os
+import sys
 
 # Root path of project
 PROJECT_ROOT = os.path.normpath(os.path.dirname(os.path.dirname(__file__)))
-print(('PROJECT_ROOT:{}'.format(PROJECT_ROOT)))
+sys.path.insert(1, PROJECT_ROOT)
+print(('sys.path:{}'.format(sys.path)))
 
 # Scrapy项目实现的bot的名字(也为项目名称)。
 BOT_NAME = 'bioon'
@@ -65,7 +67,7 @@ COOKIES_ENABLED = True
 FEED_URI = os.path.join(PROJECT_ROOT, 'a.txt')
 FEED_FORMAT = 'jsonlines'
 
-print("FEED_URI{}".format(FEED_URI))
+print("FEED_URI:{}".format(FEED_URI))
 
 LOG_ENCODING = None
 
