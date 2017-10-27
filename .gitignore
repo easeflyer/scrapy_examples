@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+dbs/
+twistd.pid
 __pycache__/
 *.py[cod]
 *$py.class
